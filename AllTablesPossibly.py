@@ -237,6 +237,7 @@ async def run5_WPI():
     await runloop.sleep_ms(500)
 
     # ---> Getting in position <---
+    #await gyroBackwards(0.1, 600, kp = 0.2, kd = 0.4)
     await gyroForward(38.5, 600, 18, kp = 1.2, kd = 0.25, reset = False)
     await runloop.sleep_ms(250)
     await turnLeft(44, 650, 125, kp = 0.75, kd = 1)
